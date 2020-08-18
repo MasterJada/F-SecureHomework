@@ -1,0 +1,3 @@
+include ':LocationTracker'
+include ':app'
+rootProject.name = "F-Secure Test task"

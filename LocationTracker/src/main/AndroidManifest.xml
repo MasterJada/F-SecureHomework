@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dev.jetlaunch.locationtracker">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".App"
+        >
+        <provider
+            android:name=".api.LocationContentProvider"
+            android:authorities="com.jetlaunch.locationtracker"
+            android:enabled="true"
+            android:exported="true"/>
+
+        <service
+            android:name=".LocationService"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>
